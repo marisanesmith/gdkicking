@@ -46,8 +46,8 @@ h2 {
 
 h3 {
     font-weight: 400;
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    /* text-transform: uppercase; */
 }
 
 h4 {
@@ -77,9 +77,22 @@ a {
     text-transform: uppercase;
 }
 
-.footer-nav {
-    font-size: 0.8rem;
+header nav a {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+footer nav a {
+    font-size: 1.2rem;
     font-weight: 200;
+    display: block;
+}
+
+.copyright-text {
+    font-weight: 100;
+    font-size: .8rem;
+    text-transform: uppercase;
 }
 
 h2:last-child,
@@ -111,6 +124,12 @@ hr {
     text-transform: none;
 }
 
+.med-text {
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 200;
+}
+
 svg {
     position: absolute;
     bottom: -1px;
@@ -133,7 +152,10 @@ svg:not(:root) {
     transform-origin: 0px 0px;
 }
 
-/* polygon { stroke-width: 2px; } */
+.split-gold {
+    background: linear-gradient(
+180deg,#fff 50%,#DBB75C 50%);
+}
 
 /* Utility Classes & Universal Styles */
 
@@ -215,7 +237,8 @@ svg:not(:root) {
 .mr     { margin-right: 3%; }
 .ml     { margin-left: 3%; }
 
-.mb-2 { margin-bottom: 5%; }
+.mb-2 { margin-bottom: 9%; }
+.mt-2 { margin-top: 9%; }
 
 .tall-10 { min-height: 10vh; }
 .tall-20 { min-height: 20vh; }
@@ -238,21 +261,11 @@ svg:not(:root) {
 
 .white-text { 
     color: white; 
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    font-weight: 300;
 }
 
 .linen-text { color: #ede8e3; }
-
-.footer-text {
-    font-weight: 300;
-    font-size: 1.2rem;
-}
-
-.copyright-text {
-    font-weight: 100;
-    font-size: .8rem;
-    text-transform: uppercase;
-}
 
 .bg-featured    { background-color: #3B534D; }
 .bg-dark-grey   { background-color: #8d9097 ;}
@@ -269,7 +282,7 @@ i {
 }
 
 i:hover {
-    color: #9eb6a8;
+    color: #000000;
     background: none;
 }
 
@@ -278,7 +291,8 @@ i:hover {
 } */
 
 .nav-hover:hover {
-    border-bottom: 2px solid #3B534D;
+    font-weight: 500;
+    /* border-bottom: 2px solid #3B534D; */
 }
 
 /* Images & Background Images */
