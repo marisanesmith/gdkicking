@@ -1,5 +1,37 @@
+/* 
+Dark Green #003734 
+Med Green #227872
+Teal #306e66
+Lt Teal #54948c
+Lt Grey #c4cbd3
+Dk Grey #8d9097
+Lt Pink #f0dde6
+Dk Pink #e0bbce
+Linen #ede8e3
+Whitesmoke #f6f6f6
+Slate Grey #292c33
+*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+header {
+    padding: 1% 5%;
+}
+
+header [class*=col] {
+    padding: 0;
+}
+
+body,
+html {
+    border: none;
+    overflow-x: hidden;
+}
+
+html { display: block; }
+
+/* Typography */
