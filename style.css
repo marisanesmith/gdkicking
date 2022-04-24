@@ -1,15 +1,6 @@
 /* 
-Dark Green #003734 
-Med Green #227872
-Teal #306e66
-Lt Teal #54948c
-Lt Grey #c4cbd3
-Dk Grey #8d9097
-Lt Pink #f0dde6
-Dk Pink #e0bbce
-Linen #ede8e3
-Whitesmoke #f6f6f6
-Slate Grey #292c33
+Dark Green #3B534D
+Gold #DBB75C
 */
 
 * {
@@ -37,7 +28,7 @@ html { display: block; }
 /* Typography */
 
 h1, h2, h3, h4, h5, p, a {
-    font-family: didot;
+    font-family: 'Montserrat', sans-serif;
     color: #292c33;
     letter-spacing: 1px;
 }
@@ -72,7 +63,7 @@ h5 {
 }
 
 .logo {
-    font-family: minerva-modern, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
@@ -81,9 +72,14 @@ h5 {
 
 a {
     text-decoration: none; 
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1rem;
     text-transform: uppercase;
+}
+
+.footer-nav {
+    font-size: 0.8rem;
+    font-weight: 200;
 }
 
 h2:last-child,
@@ -97,7 +93,7 @@ p:last-child {
 
 hr {
     border: none;
-    border-bottom: 3px solid #292c33;
+    border-bottom: 3px solid #3B534D;
     width: 8rem;
 }
 
@@ -110,8 +106,8 @@ hr {
     margin-bottom: -11rem;
 }
 
-.sm-tx {
-    font-size: 1rem;
+.small-text {
+    font-size: 0.8rem;
     text-transform: none;
 }
 
@@ -242,10 +238,7 @@ svg:not(:root) {
 
 .white-text { 
     color: white; 
-    text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-weight: 400;
-    font-size: 1.5rem;
 }
 
 .linen-text { color: #ede8e3; }
@@ -255,11 +248,38 @@ svg:not(:root) {
     font-size: 1.2rem;
 }
 
-.bg-featured    { background-color: #003734; }
+.copyright-text {
+    font-weight: 100;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.bg-featured    { background-color: #3B534D; }
 .bg-dark-grey   { background-color: #8d9097 ;}
 .bg-light-grey  { background-color: #c4cbd3; }
 .bg-linen       { background-color: #ede8e3; }
-.bg-slate       { background-color: #292c33; }
+.bg-black      { background-color: #000000; }
+
+i {
+    color: #3B534D;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+i:hover {
+    color: #9eb6a8;
+    background: none;
+}
+
+/* a:hover {
+    border-bottom: 2px solid #9eb6a8;
+} */
+
+.nav-hover:hover {
+    border-bottom: 2px solid #3B534D;
+}
 
 /* Images & Background Images */
 
@@ -310,6 +330,16 @@ svg:not(:root) {
 
 .fixed {
     background-attachment: fixed;
+}
+
+.bg-gameday { 
+    background-image: url('/images/gameday-kicking.jpg');
+    background-position: center; 
+}
+
+.bg-gameday-10 { 
+    background-image: url('/images/gameday-kicking-10.jpg');
+    background-position: center; 
 }
 
 /* Image Gallery */
